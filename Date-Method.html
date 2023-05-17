@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Date-Method
+    </title>
+</head>
+
+<body>
+    <script>
+        var d1 = new Date();
+        document.write(d1 + '<br>');
+
+        /*******************getdate***************************/
+        d2 = d1.getDate();
+        d3 = d1.getDay();
+        d4 = d1.getFullYear();
+        d5 = d1.getHours();
+        d6 = d1.getMinutes();
+        d7 = d1.getSeconds();
+        d8 = d1.getMonth();
+        d9 = d1.getTime();
+
+
+        document.write(d2 + '<br>');
+        document.write(d3 + '<br>');
+        document.write(d4 + '<br>');
+        document.write(d5 + '<br>');
+        document.write(d6 + '<br>');
+        document.write(d7 + '<br>');
+        document.write(d8 + '<br>');
+        document.write(d9 + '<br>');
+
+
+
+
+        /************************Setdate******************************/
+        var d10 = new Date();
+
+        d11 = d10.setDate(23);
+        d12 = d10.setMonth(8);
+        d13 = d10.setFullYear(1983);
+        d14 = d10.setMinutes(15);
+        d15 = d10.setHours(8);
+        d16 = d10.setSeconds(9);
+
+        document.write(d10 + '<br>');
+    </script>
+
+</body>
+
+</html>

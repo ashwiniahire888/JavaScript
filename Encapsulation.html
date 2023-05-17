@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Encapsuation
+    </title>
+</head>
+
+<body>
+    <script>
+        class parent1 {
+            home = 'sweet home';
+            car = 'BMW';
+            money = 830942;
+
+            lifeinsurance(v) {
+                document.write(this.home + '<br>');
+                this.v;
+                document.write(v + '<br>');
+            }
+            lifeinsurance1() {
+                this.lifeinsurance(1000);
+
+            }
+        }
+        var obj = new parent1();
+        obj.lifeinsurance1();
+
+        class son1 extends parent1 {
+            abc() {
+                document.write(this.car);
+            }
+        }
+
+        var obj1 = new son1;
+        obj1.abc();
+    </script>
+</body>

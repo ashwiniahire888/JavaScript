@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Event</title>
+</head>
+
+<body>
+    <button onclick="demo();">Click</button>
+    <button onclick="form1();">Form</button>
+    <p id="text"></p>
+    <p id="ans"></p>
+
+    <script>
+        function demo() {
+            alert("hiii");
+        }
+        //demo();
+
+        function form1() {
+            document.getElementById("text").innerHTML = 'No1:<input type="text" id="no1"><br><br>No2:<input type="text" id="no2"><br><br><button onclick="add();">Addition</button>'
+        }
+
+        function add() {
+            n1 = parseInt(document.getElementById('no1').value);
+            n2 = parseInt(document.getElementById('no2').value);
+            n3 = n1 + n2;
+            document.getElementById('ans').innerHTML = n3;
+        }
+    </script>
+
+</body>
