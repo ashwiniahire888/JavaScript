@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Validation</title>
+    <script src="Validation.js"></script>
+
+
+</head>
+
+<body>
+    <form name="myForm" method="post" action="studpost.php" onsubmit="return validate()" style="text-align: center;">
+        <table width="800px" cellpadding="0" cellspacing="0" style="text-align: center;">
+
+            <tr>
+                <td>
+                    <h1 style="text-align: center;">Registration Form</h1>
+                </td>
+            </tr>
+
+            <table width="480px" cellpadding="0" cellspacing="0" alignment="center">
+                <tr>
+                    <td style="text-align:center;">Name:</td>
+                    <td>
+                        <input type="text" name="sname" id="sname">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Roll No:</td>
+                    <td>
+                        <input type="text" name="roll" id="roll">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Address:</td>
+                    <td>
+                        <input type="text" name="address" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Phone:</td>
+                    <td>
+                        <input type="text" name="phone" id="phone" maxlength="10" minlength="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Email:</td>
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="term" id="term" style="text-align: center;">
+                        <a href='abc.txt' target="popup" onclick="window.open('abc.txt','width=600','height=600');return false;">Terms and Conditon</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+
+                <table width="480px" cellpadding="0" cellspacing="0" alignment="center">
+                    <tr>
+                        <td style="text-align:center"><input type="submit" name="submit" value="submit"></td>
+
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </table>
+    </form>
+</body>
+
+</html>
