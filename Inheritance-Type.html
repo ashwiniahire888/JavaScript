@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance-Type</title>
+
+  <script>
+
+    /*  1.Prototypal inheritance
+        2.Pseudo-Classical inheritance
+        3.Functional Inheritance    */
+    
+    //   Prototypal Inheritance
+    
+    let company={
+        name:"A",
+        pay:function(){
+            console.log("paying");
+
+        },
+    };
+    let worker={
+        id:1,
+        work:function(){
+            console.log("Working");
+        },
+    };
+    worker.__proto__=company;
+    console.log(worker);
+    worker.pay();
+  </script>
+  
+  <!-----3.Functional Inheritance-->
+
+  <script>
+    function Bike(data){
+        var x={};
+        x.name=data.name;
+        return x;
+    }
+    function Venom(data){
+        var x=Bike(data);
+        x.info=function(){
+            return "This is a "+ x.name + "Bike";
+        };
+    return x;
+    }
+
+    var venom=Venom({name:"Venom"});
+    console.log(venom.info());
+
+  </script>
+</head>
+<body>
+    <h1>Types of Inheritance</h1>
+    <ol>
+        <li>Prototypal inheritance <span style="color: red;">*</span></li>
+        <li>Pseudo-Classical inheritance</li>
+        <li>Functional Inheritance </li>
+    </ol>
+</body>
+</html>

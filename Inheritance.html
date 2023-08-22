@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Inheritance</title>
+</head>
+
+<body>
+    <script>
+        class parent1 {
+            home = 'sweet home';
+            money = 123456;
+            car = 'BMW';
+
+            lifeinsurance() {
+                document.write('Good Health')
+            }
+        }
+        //var obj = new parent1();
+        //obj.lifeinsurance();
+
+        class son1 extends parent1 {
+            myhome() {
+                document.write(this.home);
+            }
+        }
+        var obj1 = new son1();
+        obj1.myhome();
+
+        class son2 extends parent1 {
+            myhome() {
+                document.write(this.home);
+            }
+        }
+        var obj2 = new son2;
+        obj2.myhome();
+    </script>
+</body>
