@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Let-Const Keyword
+    </title>
+</head>
+
+<body>
+    <script>
+        function abc() {
+            let no1 = 10; {
+                let no1 = 20;
+                document.write(no1 + 10 + '<br>');
+            } {
+                let no1 = 30;
+                document.write(no1 * 70 + '<br>');
+            }
+            document.write(no1 - 5 + '<br>');
+        }
+        abc();
+
+
+
+        const x = 30;
+        x = 40;
+        document.write(x);
+    </script>
+</body>
